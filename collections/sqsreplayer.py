@@ -40,8 +40,8 @@ class SQSReplayer(threading.Thread):
         self.__name__ = name
         self.__sqs__ = boto3.client(
             'sqs',
-            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID','AKIA2GBUB2VMJKRG4JLA'),
-            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY','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'),
+            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
+            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY'),
             region_name=REGION)
         
     def getMessage(self):
