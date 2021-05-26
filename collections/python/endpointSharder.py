@@ -86,13 +86,13 @@ class endpointSharder(threading.Thread):
         LOG.info({"message":"Initializing endpoint sharder %s on process %s" % (SQS_QUEUE_URL, name) } )
         self.__sqs__ = boto3.client(
             'sqs',
-            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID','AKIA2GBUB2VMO3W37JTZ'),
-            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY','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'),
+            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID',''),
+            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY',''),
             region_name=REGION)
         self.__s3__ = boto3.client(
             's3',
-            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID','AKIA2GBUB2VMO3W37JTZ'),
-            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY','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'),
+            aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID',''),
+            aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY',''),
             region_name=REGION) 
         self.__ledger__ = ledger()
         self.__wrapi__ = wrapi()
