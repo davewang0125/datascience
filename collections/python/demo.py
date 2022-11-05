@@ -27,6 +27,7 @@ def bar(first, second, third, **options):
     print("Result: %d" %(result))
 
 def repeater(old_function):
+    """add repeater"""
     def new_function(*args, **kwds): # See learnpython.org/en/Multiple%20Function%20Arguments for how *args and **kwds works
         old_function(*args, **kwds) # we run the old function
         old_function(*args, **kwds) # we do it twice
