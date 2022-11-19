@@ -3,7 +3,19 @@ while(count<5):
     print(count)
     print(count)
     print(count)
+    print(count)
+    print(count)
+    print(count)
+    print(count)
     count +=1
+    count +=1
+    count +=1
+    count +=1
+    count +=1
+    print(count)
+    print(count)
+    print(count)
+    print(count)
 else:
     print("count value reached %d" %(count))
 
