@@ -2,6 +2,7 @@ import logging
 import boto3
 from botocore.exceptions import ClientError
 
+# ss_key=os.getenv('AWS_SECRET_ACCESS_KEY')
 
 def upload_file(file_name, bucket, object_name=None):
     """Upload a file to an S3 bucket
@@ -24,3 +25,9 @@ def upload_file(file_name, bucket, object_name=None):
         logging.error(e)
         return False
     return True
+
+def main(args):
+    upload_file("/tmp/duo.log", "access-logs-logs-logs", object_name="logs"):
+     
+if __name__ == '__main__':
+    main(sys.argv[1:])

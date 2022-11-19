@@ -1,4 +1,4 @@
-from jsonlogging import *
+# from jsonlogging import *
 import ast  
 import logging
 import time 
@@ -8,16 +8,16 @@ import sys
 import wave
 import os 
 import boto3
-import requests  
+# import requests  
 import base64 
 from datetime import datetime
 import threading
 import queue
-from eventlog import CustomJsonFormatter
+# from eventlog import CustomJsonFormatter
 from measure import measure 
 
 output_handler = logging.StreamHandler(sys.stdout)
-formatter = CustomJsonFormatter('(time) (severity) (message) (filename) (lineno)')
+# formatter = CustomJsonFormatter('(time) (severity) (message) (filename) (lineno)')
 output_handler.setFormatter(formatter)
 LOG = logging.getLogger()
 LOG.addHandler(output_handler)

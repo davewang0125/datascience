@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "steel-totality-329707",
+  "private_key_id": "40228a0225c7b8bcb5ff65d505265cf040a9b0c0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCCs4YQV2HoisQw\n382u7WhjkdQLiKz3WfKlO/5fz5OkRequ7VY6/BRXWVkYzZQoNeEOTVHKEWIBuSjk\nIxM/E2RW47ELMG+dzmOYoTWsEP3sCBW2glDaSE59BGMBI6SvF/OXPJBB1pePQnN+\nuDT27f/DT7to2WcPCKl+tGaypjTPTw5hfy8oZ7oa5P/v+5YQR1190Jw1D3+9vCpt\nM3JKU+t+GyDzCFSvjrVxPAGH3ul/RL3FOt4879toVPIT+K/NgjlmUXv8uYospKKw\nMfYx/uh74AbZpCoXURgv2ugvwnh/XUBHCEOnmRNb9d/oHO2IoZFF3Yen42kEpOfn\nV0M9l+1VAgMBAAECggEAJsyiTLGUCBNBoHyfs4EYjw5YU0A0kI0sIe8IWWrmmkqD\nG4CrK4FvjGqir2E/zRwJflRnpkO4w2gzAl6DNSNNkxmukfLD/6WoHUQmCblVl77i\nqzZOSC5U1nn55fmtxqimkEvTSygn/8grPv/yASev2EwQB1UaafUZU9q77ea3IJ8b\nu+n87PCS15kHbwFiJXyFnh9UyeaOiopV2Sjx3BLxtZ2tDUQLyUJo3mUHzyZv9l7E\nL9dGfsB24cuVeZFlETbDOYvJia6GPFkEOx9q58L6bZ7RGavftjLslAPcZUSpVRNc\nD6ING6EiEZTsZ/TP7zEASRZSVVrFTVBilDDzKQSU9QKBgQC4D+hnH1e3gKWobgvx\neQSuP45hinxbJnQfoQjFjGFz1wHfPDIFzvkNl6M5HNjaBBqXtflHlzQnIjpZYAXD\nsfQJdgf09zLHc3R7ruZycFAr9ZLWBn3Oy2yjTAaJwHEAnAZxaH3+jUvhL0WVcBw4\nm4/lUkmZlnLQuOzVopJ5ybPEowKBgQC1yKogaMjZ+tHjb3NiccatQsyQ/yPvHPy+\nZHC+cKSjJcjIgumBeys9mNujjvuZEdV3R4rglcW8YEiHjijCQWAZpNlWGuHHkUL8\n4fS1C9UoLh9qbTXxykJLFgK1PX/HUQ8vJpGTi5E+MS0CC6pV15hX6BG7x8N8Ojjl\nKqe3C1YtpwKBgFu3yZYBX0NYfrPkSl1EcZmmn/to97iv+7N7GhTec/02SX+EzmRo\nk2A7jKE8B67z1pB8pEART3KksrCwkY7HkRRZ1XMy7wHGPWgYakriPoD5OPcfevde\nFL92ddeUpnqoROmkKQx8OjB2ztS9bcKjedvK2lQHTSVG0PVPsm+vm73DAoGAIRdI\nMOIiPdv0vSwamv8PJZcVWge36N0j/RyXkXM75R8Jr8Z070cWlf3vbZSnpDOk4jO5\nyiw5dJMqYNK2BLaV4dUqYww9sXB1+0a+nv5qbQgIW/1JZpxk+PomwAtT6VqOIw0o\nTu2HIQUeplKtTTcT2ly6ba5tnX2TwdPD+AQuSd0CgYEAl/TRwkWydFkDXHQzjPyu\nOV9PBA84Me0WrK3kc5Qx0If9gcYaZXIV4c0TeRt4E2ra7eufMHGQgscASTCf7ve6\nnLrBC1QfWy8rh6TSOFmmrtjnvNnWR0BNKhCVb8XOfbLrXOUQ5V8QXG3b/0xXmbCI\nkd4eVUDLTka32GP6aKL+UhU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "translation-quickstart@steel-totality-329707.iam.gserviceaccount.com",
+  "client_id": "107396107080482792428",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/translation-quickstart%40steel-totality-329707.iam.gserviceaccount.com"
+}
