@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h1>Update Customer Information</h1>
+<form action="/update/{{id}}" method="POST">
+    <p>Customer Name:<input type="text" name="customerName" id="customerName" value="{{result[0][1]}}"></p>
+    <p>Contact Lastname:<input type="text" name="contactlname" id="contactlname" value="{{result[0][2]}}"></p>
+    <p>Contact Firstname:<input type="text" name="contactfname" id="contactfname" value="{{result[0][3]}}"></p>
+    <p>Phone Number:<input type="text" name="phone" id="phone" value="{{result[0][4]}}"></p>
+    <p>Address Line 1:<input type="text" name="address1" id="address1" value="{{result[0][5]}}"></p>
+    <p>Address Line 2:<input type="text" name="address2" id="address2" value="{{result[0][6]}}"></p>
+    <p>City:<input type="text" name="city" id="city" value="{{result[0][7]}}"></p>
+    <p>State:<input type="text" name="state" id="state" value="{{result[0][8]}}"></p>
+    <p>Postal Code:<input type="text" name="postalCode" id="postalCode" value="{{result[0][9]}}"></p>
+    <p>Country:<input type="text" name="country" id="country" value="{{result[0][10]}}"></p>
+    <p>Sales Rep Employee Id:<input type="text" name="salesrepId" id="salesrepId" value="{{result[0][11]}}"></p>
+    <p>Credit Limit:<input type="text" name="limit" id="limit" value="{{result[0][12]}}"></p>
+    <p><input type="submit" value="Update Customer"></p>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <h1>Customer Information</h1>
+
+
+    <form action="/" method="POST">
+        <p>Customer Id:<input type="text" name="customerId" id="customerId"></p>
+        <p>Customer Name:<input type="text" name="customerName" id="customerName"></p>
+        <p>Contact Lastname:<input type="text" name="contactlname" id="contactlname"></p>
+        <p>Contact Firstname:<input type="text" name="contactfname" id="contactfname"></p>
+        <p>Phone Number:<input type="text" name="phone" id="phone"></p>
+        <p>Address Line 1:<input type="text" name="address1" id="address1"></p>
+        <p>Address Line 2:<input type="text" name="address2" id="address2"></p>
+        <p>City:<input type="text" name="city" id="city"></p>
+        <p>State:<input type="text" name="state" id="state"></p>
+        <p>Postal Code:<input type="text" name="postalCode" id="postalCode"></p>
+        <p>Country:<input type="text" name="country" id="country"></p>
+        <p>Sales Rep Employee Id:<input type="text" name="salesrepId" id="salesrepId"></p>
+        <p>Credit Limit:<input type="text" name="limit" id="limit"></p>
+        <p><input type="submit" value="Add Customer"></p>
+    </form>
+   
+    <table>
+        <tr>
+            <th>Customer Id</th>
+            <th>Customer Name</th>
+            <th>Contact Lastname</th>
+            <th>Contact Firstname</th>
+            <th>Phone Number</th>
+            <th>Address Line 1</th>
+            <th>Address Line 2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postal Code</th>
+            <th>Country</th>
+            <th>Sales Rep Employee Id</th>
+            <th>Credit Limit</th>
+            <th>Action</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result[0] }}</td>
+            <td>{{ result[1] }}</td>
+            <td>{{ result[2] }}</td>
+            <td>{{ result[3] }}</td>
+            <td>{{ result[4] }}</td>
+            <td>{{ result[5] }}</td>
+            <td>{{ result[6] }}</td>
+            <td>{{ result[7] }}</td>
+            <td>{{ result[8] }}</td>
+            <td>{{ result[9] }}</td>
+            <td>{{ result[10] }}</td>
+            <td>{{ result[11] }}</td>
+            <td>{{ result[12] }}</td>
+            <td><a href="/update/{{result[0]}}">Update</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    
+</div>
+
+{% endblock %}
