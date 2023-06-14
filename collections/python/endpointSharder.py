@@ -76,6 +76,7 @@ AUDIO_FOLDER = os.getenv("AUDIO_FOLDER", "/tmp/")
 aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID')
 aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
 NUMBER_OF_THREADS = int(os.getenv('NUMBER_OF_THREADS',"1"))
+NUMBER_OF_PROCESSES= int(os.getenv('NUMBER_OF_PROCESSES',"2"))
 DEFAULT_SAMPLE_RATE = 16000
    
 class endpointSharder(threading.Thread):
@@ -330,9 +331,9 @@ def reprocessor(q=None):
             q.put(item)
         
 
-# def runServer(name):
-#     server =  endpointSharder(name=name, queue=None)
-#     server.run()
+def runServer(name):
+    server =  endpointSharder(name=name, queue=None)
+    server.run()
 
 def main(args):
     #thread with reproess queue.
@@ -361,13 +362,13 @@ def main(args):
     #     Process(target=runServer, args=(i,q)).start()
     
     #multiprocess, with pool
-    # with Pool(NUMBER_OF_PROCESSES) as pool:
-    #     try:
-    #         pool.map(runServer, range(NUMBER_OF_PROCESSES))
-    #     except Exception as ex:
-    #         print('pool.apply() exception %s ' % str(ex))
-    #     else:
-    #         raise AssertionError('expected ZeroDivisionError')
+    with Pool(NUMBER_OF_PROCESSES) as pool:
+        try:
+            pool.map(runServer, range(NUMBER_OF_PROCESSES))
+        except Exception as ex:
+            print('pool.apply() exception %s ' % str(ex))
+        else:
+            raise AssertionError('expected ZeroDivisionError')
     
 
    
